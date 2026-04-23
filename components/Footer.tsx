@@ -13,31 +13,34 @@ export default function Footer() {
             <Link href="/posts" className="text-stone-600 hover:text-indigo-600">Posts</Link>
             <Link href="/authors" className="text-stone-600 hover:text-indigo-600">Authors</Link>
             <Link href="/categories" className="text-stone-600 hover:text-indigo-600">Categories</Link>
-            {/* Changed: Added social links */}
+            {/* Changed: Updated social links with icons */}
             <div className="flex items-center gap-4">
               <a
                 href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-stone-600 hover:text-indigo-600"
+                aria-label="X (Twitter)"
               >
-                X
+                <i className="fab fa-twitter fa-lg"></i>
               </a>
               <a
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-stone-600 hover:text-indigo-600"
+                aria-label="LinkedIn"
               >
-                LinkedIn
+                <i className="fab fa-linkedin fa-lg"></i>
               </a>
               <a
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-stone-600 hover:text-indigo-600"
+                aria-label="Instagram"
               >
-                Instagram
+                <i className="fab fa-instagram fa-lg"></i>
               </a>
             </div>
           </nav>
