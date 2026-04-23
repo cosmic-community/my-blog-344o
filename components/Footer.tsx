@@ -9,10 +9,37 @@ export default function Footer() {
             <p className="font-serif text-xl font-bold text-stone-900">My Blog</p>
             <p className="text-sm text-stone-500 mt-1">Stories, ideas, and insights.</p>
           </div>
-          <nav className="flex gap-6 text-sm">
+          <nav className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-sm">
             <Link href="/posts" className="text-stone-600 hover:text-indigo-600">Posts</Link>
             <Link href="/authors" className="text-stone-600 hover:text-indigo-600">Authors</Link>
             <Link href="/categories" className="text-stone-600 hover:text-indigo-600">Categories</Link>
+            {/* Changed: Added social links */}
+            <div className="flex items-center gap-4">
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stone-600 hover:text-indigo-600"
+              >
+                X
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stone-600 hover:text-indigo-600"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stone-600 hover:text-indigo-600"
+              >
+                Instagram
+              </a>
+            </div>
           </nav>
         </div>
         <div className="mt-8 pt-8 border-t border-stone-100 text-xs text-stone-400 text-center">
